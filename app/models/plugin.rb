@@ -8,7 +8,7 @@ class Plugin
   property :name, String
   property :author, String
   property :version, String
-  property :homepage, String, :length => 255
+  property :homepage, URI, :length => 255
   property :about, String, :length => 255
   property :active, TrueClass
 

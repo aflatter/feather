@@ -1,6 +1,4 @@
 $TESTING=true
-require 'rubygems'
-require 'merb-core'
 
 Merb.start_environment :environment => (ENV['MERB_ENV'] || 'test'), :merb_root => File.join(File.dirname(__FILE__), ".." )
 

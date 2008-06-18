@@ -5,8 +5,7 @@ class Configuration
   property :id, Integer, :key => true
   property :title, String
   property :tag_line, String, :length => 255
-  # TODO: was TEXT, is VARCHAR now, should be TEXT again
-  property :about, String
+  property :about, Text
   property :about_formatter, String
   property :permalink_format, String
 

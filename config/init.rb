@@ -46,6 +46,7 @@ use_test :rspec, "merb_stories"
 
 # These are some examples of how you might specify dependencies.
 # 
+
 dependency "merb_helpers"
 dependency "merb-assets"
 dependency "merb-cache"
@@ -56,6 +57,7 @@ dependency 'merb_paginate'
 dependency "dm-aggregates"
 dependency "dm-validations"
 dependency "dm-timestamps"
+dependency "dm-types"
 
 # OR
 # OR
