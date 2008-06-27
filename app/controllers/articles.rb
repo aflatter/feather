@@ -1,3 +1,5 @@
+require 'collection_presenter'
+
 class Articles < Application
   cache_pages :index, :show
 
@@ -14,8 +16,11 @@ class Articles < Application
     else
       @articles = Article.find_recent
     end
+    
     # Can't use this with caching at the minute, meaning post-process events are tricky...
     #render_then_call(display(@articles)) { Hooks::Events.after_index_article_request(@articles, request) }
+
+    @presenter = CollectionPresenter.new(@articles, self)
     display @articles
   end
 

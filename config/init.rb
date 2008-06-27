@@ -59,6 +59,7 @@ dependency 'merb_paginate'
 dependency "dm-aggregates"
 dependency "dm-validations"
 dependency "dm-timestamps"
+dependency "extlib"
 
 # OR
 # OR
